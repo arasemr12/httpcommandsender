@@ -1,0 +1,8 @@
+name: httpcommandsender
+version: '${project.version}'
+main: cukitay.httpcommandsender.Httpcommandsender
+api-version: '1.16'
+commands:
+  httpcommandsender:
+    description: reload
+    usage: /httpcommandsender
