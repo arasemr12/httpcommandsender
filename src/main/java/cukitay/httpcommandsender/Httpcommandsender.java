@@ -44,7 +44,7 @@ public final class Httpcommandsender extends JavaPlugin implements CommandExecut
 
             this.server = HttpServer.create(new InetSocketAddress(ip, port), 0);
 
-            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
+            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
             this.server.setExecutor(threadPoolExecutor);
 
             String finalPassword = password;
